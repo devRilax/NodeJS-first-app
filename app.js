@@ -1,37 +1,4 @@
-const argv = require('yargs')
-            .command('listar', 'Obtiene el listado de multiplicaciones', {
-                base: {
-                    demand: true,
-                    alias: 'b',
-                    default: 1
-                },
-                limit: {
-                    demand: true,
-                    alias: 'l',
-                    default: 10
-                }
-            })
-            .command('crear', 'Crea un archivo plano en la carpeta files, con el resultado de las multiplicaciones.', {
-                base: {
-                    demand: true,
-                    alias: 'b',
-                    default: 1
-                },
-                limit: {
-                    demand: true,
-                    alias: 'l',
-                    default: 10
-                }
-            })
-            .command('eliminar', 'Elimina un archivo de la ubicación files', {
-                nombre: {
-                    demand: true,
-                    alias: 'n'
-                }
-            })
-            .help()
-            .argv
-
+const { argv } = require('./config/yargs')
 const multiplicacionLogic = require('./logic/multiplicacionLogic')
 const fileHelper = require('./logic/fileLogic')
 
