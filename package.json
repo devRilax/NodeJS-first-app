@@ -1,0 +1,15 @@
+{
+  "name": "bases-node",
+  "version": "1.0.0",
+  "description": "Aplicación de línea de comandos",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Danilo Caro",
+  "license": "ISC",
+  "dependencies": {
+    "yargs": "^15.1.0"
+  },
+  "devDependencies": {}
+}
